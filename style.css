@@ -9,9 +9,21 @@ body {
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
+body * {
+  font-family: "Inter", sans-serif;
+}
+
 #container {
   border: 1px solid white;
-  width: 360px;
-  height: 712px;
   margin: auto;
+  width: 360px;
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+  height: 111px;
 }

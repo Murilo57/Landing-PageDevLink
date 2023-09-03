@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/Background.png);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.5);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+}
+
 body {
   /*
   background-image: url(./assets/bg-mobile.jpg);
@@ -12,12 +28,12 @@ body {
   background-size: cover;
   */
   /*background: color image repeat position/size*/
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   font-family: "Inter", sans-serif;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 #container {
@@ -55,8 +71,8 @@ ul li a {
   align-items: center;
   padding: 16px 24px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -70,6 +86,12 @@ ul li a {
 
 /*pseudo-selector */
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(var-surface-color-hover);
   border: 1px solid white;
+}
+
+footer {
+  padding: 24px 0px;
+  text-align: center;
+  font-size: 14px;
 }

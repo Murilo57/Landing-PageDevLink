@@ -10,6 +10,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --highligh-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
@@ -18,6 +19,7 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.5);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --highligh-color: rgba(0, 0, 0, 0, 0.1);
 }
 
 body {
@@ -54,6 +56,10 @@ body * {
 #profile p {
   font-weight: 500;
   line-height: 24px;
+}
+
+ul img a {
+  background: var(--highligh-color);
 }
 
 /*Links*/
